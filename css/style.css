@@ -1,0 +1,76 @@
+/* CSS Document */
+@font-face {
+	font-family: Minecraftia;
+	src: url("../css/Minecraftia-Regular.ttf");
+}
+body {
+	background: #303030 url("../img/panorama-blurred.png") repeat-x 0 0;
+	background-size: auto;
+    animation: MinecraftBackground 165s linear infinite;
+	text-align: center;
+	font-family: Minecraftia;
+	text-shadow: 0.2vw 0.2vw 0 #000;
+}
+main {
+	padding-top: 5%;
+}
+img, main, div {
+	image-rendering: pixelated;
+}
+#logo {
+	padding-top: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+/* TODO: Make the flashing text scale down */
+#flashingtext {
+	transform: rotate(-25deg);
+	margin-left: 62%;
+	margin-top: -4%;
+	color: #FFFF00;
+	font-size: 2vw;
+	animation-name: FlashingText;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	width: fit-content;
+}
+.button {
+	/*padding: 0.2% 50vw;*/
+	padding: 0.2% 0%;
+	margin: auto;
+	width: 40%;
+	background: #7D7D7D url("../img/button.png") no-repeat;
+	background-size: 100% 100%;
+	color: #E0E0E0;
+	font-size: 1.2vw;
+	margin-bottom: 1%;
+}
+.button:hover {
+	background: #7079AA url("../img/button-hover.png") no-repeat;
+	background-size: 100% 100%;
+	color: #FFFFA0;
+}
+
+.button span {
+	vertical-align: middle;
+}
+
+@keyframes FlashingText {
+	0% {
+		transform: scale(1) rotate(-25deg);
+	}
+	50% {
+		transform: scale(1.05) rotate(-25deg);
+	}
+	100% {
+		transform: scale(1) rotate(-25deg);
+	}
+}
+
+@keyframes MinecraftBackground {
+    0%      { background-position: 0 0;}
+    100%    { background-position: -4096px 0;}
+}
