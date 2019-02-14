@@ -9,7 +9,7 @@ body {
 	animation: MinecraftBackground 165s linear infinite;
 	text-align: center;
 	font-family: Minecraftia;
-	text-shadow: 0.2vw 0.2vw 0 #000;
+	text-shadow: 0.2vw 0.2vw 0 #383838;
 }
 main {
 	padding-top: 5%;
