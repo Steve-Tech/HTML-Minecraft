@@ -3,22 +3,36 @@
 	font-family: Minecraftia;
 	src: url("../css/Minecraftia-Regular.ttf");
 }
+html {
+	height: 100%;
+	overflow: hidden;
+}
 body {
 	background: #303030 url("../img/panorama-blurred.png") repeat-x 0 0;
-	background-size: auto;
+	background-size: cover;
 	animation: MinecraftBackground 165s linear infinite;
 	text-align: center;
 	font-family: Minecraftia;
 	text-shadow: 0.2vw 0.2vw 0 #383838;
+	min-height: 100%;
 }
 main {
-	padding-top: 5%;
+	padding: 5% 30% 0;
 }
 img, main, div {
 	image-rendering: pixelated;
 }
 a {
+	color: #fff;
 	text-decoration: none;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2vw;
+  color: white;
+  margin-bottom: -0.5vw;
 }
 #logo {
 	padding-top: 5%;
@@ -27,7 +41,7 @@ a {
 	margin-right: auto;
 	width: 50%;
 }
-/* TODO: Make the flashing text scale down */
+/* TODO: Make the flashing text scale down as more text is added */
 #flashingtext {
 	transform: rotate(-20deg);
 	margin-left: 62%;
@@ -44,23 +58,18 @@ a {
 	/* padding: 0.2% 50vw; */
 	padding: 0.2% 0%;
 	margin: auto;
-	width: 40%;
 	background: #7D7D7D url("../img/button.png") no-repeat;
 	background-size: 100% 100%;
 	color: #E0E0E0;
 	font-size: 1.2vw;
-	margin-bottom: 1%;
+	margin-bottom: 2%;
 }
 .button_small {
 	padding: 0.2% 0%;
 	margin: auto;
-	width: 19%;
+	width: 49%;
 	display: inline-block;
-	margin-top: 2%
-}
-.spacer {
-	width: 1%;
-	display: inline-block;
+	margin-top: 5%;
 }
 .button:hover {
 	background: #7079AA url("../img/button-hover.png") no-repeat;
@@ -69,6 +78,15 @@ a {
 }
 .button span {
 	vertical-align: middle;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+footer .right {
+	margin-right: 10px;
 }
  @keyframes FlashingText {
  0% {
