@@ -35,10 +35,7 @@ footer {
 	margin-bottom: 0.4vw;
 }
 #logo {
-	padding-top: 5%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 5%;
 	width: 50%;
 }
 /* TODO: Make the flashing text scale down as more text is added */
@@ -48,21 +45,17 @@ footer {
 	margin-top: -4%;
 	color: #FFFF00;
 	font-size: 2vw;
-	animation-name: FlashingText;
-	animation-duration: 0.5s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
+	animation: FlashingText 0.5s ease-in-out infinite;
 	width: fit-content;
 }
 .button {
 	/* padding: 0.2% 50vw; */
 	padding: 1% 0 3% 0;
-	margin: auto;
+	margin: 0 auto 2% auto;
 	background: #7D7D7D url("../img/button.png") no-repeat;
 	background-size: 100% 100%;
 	color: #E0E0E0;
 	font-size: 1.2vw;
-	margin-bottom: 2%;
 }
 .button_small {
 	width: 49%;
