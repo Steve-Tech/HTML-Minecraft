@@ -40,13 +40,12 @@ footer {
 }
 /* TODO: Make the flashing text scale down as more text is added */
 #flashingtext {
+	margin: -3.5% 0 0 47%;
+	width: 40%;
 	transform: rotate(-20deg);
-	margin-left: 62%;
-	margin-top: -4%;
+	animation: FlashingText 0.5s ease-in-out infinite;
 	color: #FFFF00;
 	font-size: 2vw;
-	animation: FlashingText 0.5s ease-in-out infinite;
-	width: fit-content;
 }
 .button {
 	/* padding: 0.2% 50vw; */
@@ -56,6 +55,8 @@ footer {
 	background-size: 100% 100%;
 	color: #E0E0E0;
 	font-size: 1.2vw;
+	outline: 0.2vw solid #000;
+	outline-offset: -0.2vw;
 }
 .button_small {
 	width: 49%;

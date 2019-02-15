@@ -7,12 +7,12 @@ When modifying the template some experience with HTML will be helpful but if you
 3. Changing the Button Text and Link
 
 ### To Do list:
-- [x] Add the splash Text and make it flash
+- [x] Add the splash text and make it flash
 - [x] Make the background move like in the real game
 - [x] Add all the buttons (including the small ones)
 - [x] Add some footer text (and make it clear that I don't own Minecraft)
 - [ ] Make the flashing text scale down as more text is added
-- [ ] Make the flashing Text change
+- [ ] Make the flashing text change
 
 ### Changing the Flashing Text:
 **Step 1:** Open `index.html` and change the `Awesome!` to something you would perfer.
