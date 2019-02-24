@@ -1,5 +1,5 @@
 ## Welcome to Steve's HTML-Minecraft Template
-When modifying the template some experience with HTML will be helpful but if your new to this, well welcome to HTML5 I'll try and keep it as simple as possible if it's still too hard create an issue or something (yes you can create issues for questions too).
+When modifying the template some experience with HTML (and CSS) would be helpful. However, if you don't have any experience with HTML I'll try and keep it as simple as possible and if it's still too hard, create an issue or something (yes you can create issues for questions too).
 
 ### Things in the documentation:
 1. To Do list
