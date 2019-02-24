@@ -51,8 +51,8 @@ footer {
 	/* padding: 0.2% 50vw; */
 	padding: 1% 0 3% 0;
 	margin: 0 auto 2% auto;
-	background: #7D7D7D url("../img/button.png") no-repeat;
-	background-size: 100% 100%;
+	background: #7D7D7D url("../img/buttons.png") no-repeat center;
+	background-size: 100% 300%;
 	color: #E0E0E0;
 	font-size: 1.2vw;
 	outline: 0.2vw solid #000;
@@ -64,9 +64,14 @@ footer {
 	margin-top: 5%;
 }
 .button:hover {
-	background: #7079AA url("../img/button-hover.png") no-repeat;
-	background-size: 100% 100%;
+	background: #7079AA url("../img/buttons.png") no-repeat bottom;
+	background-size: 100% 300%;
 	color: #FFFFA0;
+}
+.button:disabled, .button[disabled] {
+	background: #272727 url("../img/buttons.png") no-repeat top;
+	background-size: 100% 300%;
+	color: #A9A9A9;
 }
 .button span {
 	vertical-align: middle;
