@@ -13,6 +13,7 @@ When modifying the template some experience with HTML (and CSS) would be helpful
 - [x] Add some footer text (and make it clear that I don't own Minecraft)
 - [ ] Make the flashing text scale down as more text is added
 - [ ] Make the flashing text change
+- [ ] Make a World/Server Selection Menu
 
 ### Changing the Flashing Text:
 **Step 1:** Open `index.html` and change the `Awesome!` to something you would perfer.
@@ -64,7 +65,7 @@ The text between the `<span>` & `</span>` is the text shown on the buttons; and 
   </a> <a href="https://github.com/Steve-Tech">
   <div class="button"><span>This is the third button it opens my GitHub</span></div>
   </a> <a href="https://steve-tech.github.io/HTML-Minecraft/docs/">
-  <div class="button button_small left"><span>This open the Docs</span></div>
+  <div class="button button_small left"><span>This opens the Docs</span></div>
   </a> <a href="javascript:window.open('','_self').close();"> <!-- This was me testing but it doesn't really work -->
   <div class="button button_small right"><span>This tries to close the tab</span></div>
   </a> </main>
