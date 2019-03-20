@@ -1,26 +1,34 @@
 /* CSS Document */
-@font-face {
+/*@font-face {
 	font-family: Minecraft;
 	src: url("../css/minecraft.ttf");
+}*/
+@font-face {
+  font-family: 'Minecraft';
+  src: url("../css/minecraftfont.eot");
+  src: url("../css/minecraftfont.woff") format("woff"), url("../css/minecraftfont.ttf") format("truetype");
 }
+
 html {
 	height: 100%;
 	overflow: hidden;
 }
 body {
-	background: #303030 url("../img/panorama-blurred.jpg") repeat-x 0 0;
-	background-size: cover;
-	animation: MinecraftBackground 165s linear infinite;
+	image-rendering: pixelated;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #866043 url("../img/dirt.png") repeat 0 0;
+	background-size: 10%;
+	color: #FFF;
 	text-align: center;
 	font-family: Minecraft;
 	text-shadow: 0.2vw 0.2vw 0 #383838;
 	min-height: 100%;
-}
-main {
-	padding: 8% 30% 0 30%;
+	margin: 0;
 }
 img, main, div {
 	image-rendering: pixelated;
+}
+img {
+	width: 100%
 }
 a {
 	color: #fff;
@@ -33,6 +41,12 @@ footer {
 	font-size: 1.2vw;
 	color: white;
 	margin-bottom: 0.4vw;
+}
+#panorama {
+	image-rendering: auto;
+	background: #303030 url("../img/panorama-blurred.jpg") repeat-x 0 0;
+	background-size: cover;
+	animation: MinecraftBackground 1080s linear infinite;
 }
 #logo {
 	margin-top: 5%;
@@ -47,9 +61,46 @@ footer {
 	color: #FFFF00;
 	font-size: 2vw;
 }
+#picker-menu {
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+	box-shadow: inset -5px 0px 20px 2px #000, inset 5px 0px 20px 2px #000;
+	width: 100vw;
+	padding: 20vh 0;
+}
+#picker-menu div {
+	width: 50%;
+	text-align: left;
+	margin: auto;
+	padding: 1% 2%;
+}
+#picker-menu div:not(.active-world):hover, .active-world {
+	border: solid #FFF 4px;
+	padding: calc(1% - 4px) calc(2% - 4px);
+}
+#picker-title {
+	font-weight: normal;
+	margin-top: 2em;
+}
+#loading-title {
+	margin-top: 45vh;
+	font-size: 1.8vw;
+	font-weight: normal;
+}
+.button-wrapper {
+	margin: 8vw 30vw 0 30vw;
+	width: 40vw;
+}
+.picker-button-wrapper {
+	margin: 0 5vw;
+}
+.picker-buttons {
+	position: absolute;
+	bottom: 10%;
+	width: 90vw;
+}
 .button {
 	/* padding: 0.2% 50vw; */
-	padding: 1% 0 3% 0;
+	padding: 0.2vw 0 0.8vw 0;
 	margin: 0 auto 2% auto;
 	background: #7D7D7D url("../img/buttons.png") no-repeat center;
 	background-size: 100% 300%;
@@ -62,6 +113,22 @@ footer {
 	width: 49%;
 	display: inline-block;
 	margin-top: 5%;
+}
+.picker-button1 {
+	display: inline-block;
+	width: 40.5%;
+	margin-bottom: 1.5%;
+}
+.picker-button2 {
+	display: inline-block;
+	width: 20%;
+}
+.picker-header {
+	font-size: 1.2em;
+}
+.picker-text {
+	color: #808080;
+	font-size: 1.2em;
 }
 .button:hover {
 	background: #7079AA url("../img/buttons.png") no-repeat bottom;
@@ -85,6 +152,9 @@ footer {
 .bold {
 	font-weight: bold;
 }
+.middle {
+	vertical-align: middle;
+}
 footer .right {
 	margin-right: 10px;
 }
@@ -101,9 +171,9 @@ footer .right {
 }
  @keyframes MinecraftBackground {
  0% {
-background-position: 0 0;
+background-position: 0% 0;
 }
  100% {
-background-position: -4096px 0;
+background-position: 1000% 0;
 }
 }

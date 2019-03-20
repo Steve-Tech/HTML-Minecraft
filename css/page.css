@@ -1,0 +1,10 @@
+/* CSS Document */
+body {
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), #866043 url("../img/dirt.png") repeat 0 0;
+	background-size: 4%;
+	animation: none;
+	color: #FFF;
+}
+.middle {
+	vertical-align: middle;
+}

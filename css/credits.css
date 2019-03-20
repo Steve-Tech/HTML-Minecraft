@@ -1,0 +1,30 @@
+main {
+    margin: 5% 20%;
+	font-size: 1.5vw;
+	line-height: 2em;
+}
+#credits-logo {
+	width: 100%;
+    margin-bottom: 5%;
+}
+.heading {
+	line-height: 2.5em;
+}
+.heading > span {
+	font-weight: bold;
+	color: #FF5;
+}
+.creditsScroll {
+	-webkit-animation: CreditsScroll 20s ease-out;
+	animation: CreditsScroll 20s ease-out;
+}
+@keyframes CreditsScroll {
+0% {
+background-position: 0 150px;
+transform: translateY(100%);
+}
+100% {
+background-position: 0 0;
+transform: translateY(0%);
+}
+}
