@@ -44,9 +44,10 @@ footer {
 }
 #panorama {
 	image-rendering: auto;
-	background: #303030 url("../img/panorama-blurred.jpg") repeat-x 0 0;
+	background: #303030 url("../img/panorama.png") repeat-x 0 0;
 	background-size: cover;
-	animation: MinecraftBackground 1080s linear infinite;
+	animation: MinecraftBackground 180s linear infinite;
+	backdrop-filter: blur(16px);
 }
 #logo {
 	margin-top: 5%;
@@ -158,22 +159,19 @@ footer {
 footer .right {
 	margin-right: 10px;
 }
- @keyframes FlashingText {
- 0% {
- transform: scale(1) rotate(-20deg);
+@keyframes FlashingText {
+	0% {
+		transform: scale(1) rotate(-20deg);
+	}
+	50% {
+		transform: scale(1.05) rotate(-20deg);
+	}
+	100% {
+		transform: scale(1) rotate(-20deg);
+	}
 }
- 50% {
- transform: scale(1.05) rotate(-20deg);
-}
- 100% {
- transform: scale(1) rotate(-20deg);
-}
-}
- @keyframes MinecraftBackground {
- 0% {
-background-position: 0% 0;
-}
- 100% {
-background-position: 1000% 0;
-}
+@keyframes MinecraftBackground {
+	100% {
+		background-position-x: 1000%;
+	}
 }
