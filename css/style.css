@@ -73,6 +73,7 @@ footer {
 	text-align: left;
 	margin: auto;
 	padding: 1% 2%;
+	font-size: 1vw;
 }
 #picker-menu div:not(.active-world):hover, .active-world {
 	border: solid #FFF 4px;
@@ -80,7 +81,7 @@ footer {
 }
 #picker-title {
 	font-weight: normal;
-	margin-top: 2em;
+	font-size: 2vw;
 }
 #loading-title {
 	margin-top: 45vh;
